@@ -1,0 +1,28 @@
+﻿<Page
+    x:Class="AudioApp.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:AudioApp"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <TextBox x:Name="textBox" HorizontalAlignment="Left" Height="47.478" Margin="100.888,65.285,0,0" TextWrapping="Wrap" Text="Login" VerticalAlignment="Top" Width="165.812" RenderTransformOrigin="0.505,1.706" UseLayoutRounding="False" d:LayoutRounding="Auto" TextChanged="textBox_TextChanged">
+            <TextBox.RenderTransform>
+                <CompositeTransform Rotation="-0.764" TranslateX="2.282" TranslateY="-1.371" SkewY="0.904"/>
+            </TextBox.RenderTransform>
+        </TextBox>
+        <TextBlock x:Name="username" HorizontalAlignment="Left" Margin="113,131,0,0" TextWrapping="Wrap" Text="Username" VerticalAlignment="Top" Height="49" Width="131" Foreground="#FF6C6666"/>
+        <TextBlock x:Name="password" HorizontalAlignment="Left" Margin="113,185,0,0" TextWrapping="Wrap" Text="Password" VerticalAlignment="Top" Height="49" Width="131" Foreground="#FF858983"/>
+        <TextBox x:Name="textBox_Copy" HorizontalAlignment="Left" Height="47.478" Margin="102.221,306.618,0,0" TextWrapping="Wrap" Text="or login using" VerticalAlignment="Top" Width="165.812" RenderTransformOrigin="0.505,1.706" UseLayoutRounding="False" d:LayoutRounding="Auto" TextChanged="textBox_TextChanged">
+            <TextBox.RenderTransform>
+                <CompositeTransform Rotation="-0.764" TranslateX="2.282" TranslateY="-1.371" SkewY="0.904"/>
+            </TextBox.RenderTransform>
+        </TextBox>
+        <Button x:Name="button_facebook" Content="Facebook" HorizontalAlignment="Left" Margin="113,392,0,0" VerticalAlignment="Top" Width="131"/>
+        <Button x:Name="button__google" Content="Google+" HorizontalAlignment="Left" Margin="113,464,0,0" VerticalAlignment="Top" Width="131"/>
+        <Button x:Name="button_login" Content="Login" HorizontalAlignment="Left" Margin="145,239,0,0" VerticalAlignment="Top" Click="button_enter_Click"/>
+
+    </Grid>
+</Page>
